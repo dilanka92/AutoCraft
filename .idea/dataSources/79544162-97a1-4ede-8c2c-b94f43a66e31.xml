@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="autocrafts">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="autocrafts">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="hotelfinance"/>
+    <schema id="4" parent="1" name="hotelinventory"/>
+    <schema id="5" parent="1" name="hotelinventory-ori"/>
+    <schema id="6" parent="1" name="hotelpos"/>
+    <schema id="7" parent="1" name="information_schema"/>
+    <schema id="8" parent="1" name="mysql"/>
+    <schema id="9" parent="1" name="mytest"/>
+    <schema id="10" parent="1" name="performance_schema"/>
+    <schema id="11" parent="1" name="reservation"/>
+    <schema id="12" parent="1" name="res_inventory"/>
+    <schema id="13" parent="1" name="smartfitness"/>
+    <schema id="14" parent="1" name="springtest"/>
+    <schema id="15" parent="1" name="test"/>
+    <schema id="16" parent="1" name="tst"/>
+    <schema id="17" parent="1" name="weka"/>
+    <table id="18" parent="2" name="customer"/>
+    <table id="19" parent="2" name="payment"/>
+    <table id="20" parent="2" name="user"/>
+    <table id="21" parent="2" name="vehical_data"/>
+    <table id="22" parent="2" name="vehicle_repair"/>
+    <column id="23" parent="18" name="Cus_ID">
+      <Position>1</Position>
+      <DataType>int(4)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="24" parent="18" name="C_Name">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="25" parent="18" name="C_Address">
+      <Position>3</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="26" parent="18" name="C_Email">
+      <Position>4</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="27" parent="18" name="C_Contact">
+      <Position>5</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="28" parent="18" name="NIC">
+      <Position>6</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <key id="29" parent="18" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Cus_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="30" parent="19" name="payment_ID">
+      <Position>1</Position>
+      <DataType>int(5)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="31" parent="19" name="Rep_ID">
+      <Position>2</Position>
+      <DataType>int(5)|0</DataType>
+    </column>
+    <column id="32" parent="19" name="P_Type">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="33" parent="19" name="Amount">
+      <Position>4</Position>
+      <DataType>double|0</DataType>
+    </column>
+    <column id="34" parent="19" name="ReciptNo">
+      <Position>5</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <column id="35" parent="19" name="Description">
+      <Position>6</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="36" parent="19" name="AddDate">
+      <Position>7</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <key id="37" parent="19" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>payment_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="38" parent="20" name="User_ID">
+      <Position>1</Position>
+      <DataType>int(3)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="39" parent="20" name="Username">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="40" parent="20" name="Password">
+      <Position>3</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="41" parent="20" name="Active">
+      <Position>4</Position>
+      <DataType>int(2)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <key id="42" parent="20" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>User_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="43" parent="21" name="V_Id">
+      <Position>1</Position>
+      <DataType>int(5)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="44" parent="21" name="Chasse_No">
+      <Position>2</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="45" parent="21" name="Reg_No">
+      <Position>3</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="46" parent="21" name="Eng_No">
+      <Position>4</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="47" parent="21" name="Cus_ID">
+      <Position>5</Position>
+      <DataType>int(5)|0</DataType>
+    </column>
+    <column id="48" parent="21" name="Brand">
+      <Position>6</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="49" parent="21" name="Model">
+      <Position>7</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="50" parent="21" name="Category">
+      <Position>8</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="51" parent="21" name="Option">
+      <Position>9</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="52" parent="21" name="pic1">
+      <Position>10</Position>
+      <DataType>varchar(100)|0</DataType>
+    </column>
+    <column id="53" parent="21" name="Remarks">
+      <Position>11</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="54" parent="21" name="Transmition">
+      <Position>12</Position>
+      <DataType>varchar(25)|0</DataType>
+    </column>
+    <column id="55" parent="21" name="Fuel">
+      <Position>13</Position>
+      <DataType>varchar(25)|0</DataType>
+    </column>
+    <column id="56" parent="21" name="Year">
+      <Position>14</Position>
+      <DataType>int(5)|0</DataType>
+    </column>
+    <key id="57" parent="21" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>V_Id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="58" parent="22" name="Rep_ID">
+      <Position>1</Position>
+      <DataType>int(6)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="59" parent="22" name="Veh_ID">
+      <Position>2</Position>
+      <DataType>int(5)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="60" parent="22" name="Cus_ID">
+      <Position>3</Position>
+      <DataType>int(6)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="61" parent="22" name="Fault">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="62" parent="22" name="Remarks">
+      <Position>5</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="63" parent="22" name="Status_">
+      <Position>6</Position>
+      <DataType>int(2)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="64" parent="22" name="Temp_cost">
+      <Position>7</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="65" parent="22" name="Meter">
+      <Position>8</Position>
+      <DataType>varchar(20)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="66" parent="22" name="Remarks2">
+      <Position>9</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="67" parent="22" name="Add_Date">
+      <Position>10</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="68" parent="22" name="InvoiceNo">
+      <Position>11</Position>
+      <DataType>int(5)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="69" parent="22" name="Next_Service">
+      <Position>12</Position>
+      <DataType>int(6)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
+    </column>
+    <column id="70" parent="22" name="RecivedItem">
+      <Position>13</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <key id="71" parent="22" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>Rep_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
