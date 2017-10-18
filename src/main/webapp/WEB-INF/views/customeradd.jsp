@@ -1,9 +1,3 @@
-<%-- 
-    Document   : customerform
-    Created on : Sep 20, 2017, 8:42:35 PM
-    Author     : Asiri PC
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

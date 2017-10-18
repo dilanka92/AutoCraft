@@ -1,9 +1,3 @@
-<%-- 
-    Document   : home
-    Created on : Sep 5, 2017, 11:48:18 PM
-    Author     : Asiri PC
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
